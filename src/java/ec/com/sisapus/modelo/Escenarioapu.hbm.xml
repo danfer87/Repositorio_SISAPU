@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/01/2015 05:37:19 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="ec.com.sisapus.modelo.Escenarioapu" table="escenarioapu" catalog="bdsisapu2">
+        <id name="codigoEscenario" type="java.lang.Integer">
+            <column name="CODIGO_ESCENARIO" />
+            <generator class="identity" />
+        </id>
+        <property name="nombreEscenario" type="string">
+            <column name="NOMBRE_ESCENARIO" length="100" />
+        </property>
+        <set name="analisispreciounitarios" inverse="true">
+            <key>
+                <column name="CODIGO_ESCENARIO" />
+            </key>
+            <one-to-many class="ec.com.sisapus.modelo.Analisispreciounitario" />
+        </set>
+    </class>
+</hibernate-mapping>

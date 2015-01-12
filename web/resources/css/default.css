@@ -1,0 +1,134 @@
+body {
+    background-color: #727D88;
+    font-size: 12px;
+    font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    color: steelblue;  
+    margin: 10px;
+}
+
+h1 {
+    font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    border-bottom: 1px solid #AFAFAF; 
+    font-size:  16px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #CDCDCD;
+}
+
+a:link, a:visited {
+    color: black;
+    font-weight : bold;
+    text-decoration: none;
+}
+
+a:link:hover, a:visited:hover  {
+    color: #666;
+    font-weight : bold;
+    text-decoration : underline;
+}
+
+.ui-state-default .icon-add{
+    background-image: url(../imagenes/iconos/Add.png); 
+}
+.ui-state-default .icon-delete{
+    background-image: url(../imagenes/iconos/Delete.png);
+}
+.ui-state-default .icon-edit{
+    background-image: url(../imagenes/iconos/Edit.png); 
+}
+.ui-state-default .icon-save{
+    background-image: url(../imagenes/iconos/Save.png); 
+}
+.ui-state-default .icon-cancel{
+    background-image: url(../imagenes/iconos/Cancel.png); 
+}
+.ui-state-default .icon-check{
+    background-image: url(../imagenes/iconos/Check.png); 
+}
+
+.ui-icon.icon-proyecto{
+    background-image: url(../imagenes/iconos/Project.png);
+    
+} 
+
+.ui-icon.icon-nuevoproyecto{
+    background-image: url(../imagenes/iconos/NuevoProyecto.png);
+    
+} 
+
+.ui-state-default .icon-edit1{
+    background-image: url(../imagenes/iconos/Edit1.png); 
+}
+
+.ui-state-default .icon-permiso{
+    background-image: url(../imagenes/iconos/Permiso.png); 
+}
+
+.ui-icon.icon-transporte{
+    background-image: url(../imagenes/iconos/Car.png);
+}
+
+.ui-icon.icon-costo{
+    background-image: url(../imagenes/iconos/Costo.png);
+}
+
+.ui-icon.icon-reporte{
+    background-image: url(../imagenes/iconos/Reporte.png);
+}
+
+.ui-icon.icon-seguridad{
+    background-image: url(../imagenes/iconos/Seguridad.png);
+}
+
+.ui-icon.icon-salir{
+    background-image: url(../imagenes/iconos/Close.png);
+}
+
+.ui-icon.icon-user{
+    background-image: url(../imagenes/iconos/User.png);
+}
+
+.ui-icon.icon-perfil{
+    background-image: url(../imagenes/iconos/Perfil.png);
+}
+
+.ui-icon.icon-precio{
+    background-image: url(../imagenes/iconos/Price_list.png);
+}
+
+.ui-icon.icon-rubro{
+    background-image: url(../imagenes/iconos/Rubro.png);
+}
+
+.ui-icon.icon-herramienta{
+    background-image: url(../imagenes/iconos/Herramienta.png);
+}
+
+.ui-icon.icon-recursos{
+    background-image: url(../imagenes/iconos/Recursos.png);
+}
+
+.ui-icon.icon-manoobra{
+    background-image: url(../imagenes/iconos/ManoObra.png);
+}
+
+.ui-icon.icon-material{
+    background-image: url(../imagenes/iconos/Material.png);
+}
+
+.ui-icon.icon-cronograma{
+    background-image: url(../imagenes/iconos/Cronograma.png);
+}
+
+.ui-icon.icon-reajuste{
+    background-image: url(../imagenes/iconos/Reajuste.png);
+}
+
+.ui-icon.icon-presupuesto{
+    background-image: url(../imagenes/iconos/Presupuesto.png);
+}
+
+.ui-icon.icon-eliminarapu{
+    background-image: url(../imagenes/iconos/eliminar1.png);
+}

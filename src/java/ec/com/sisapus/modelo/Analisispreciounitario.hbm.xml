@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/01/2015 05:37:19 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="ec.com.sisapus.modelo.Analisispreciounitario" table="analisispreciounitario" catalog="bdsisapu2">
+        <id name="codigoApu" type="java.lang.Integer">
+            <column name="CODIGO_APU" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="escenarioapu" class="ec.com.sisapus.modelo.Escenarioapu" fetch="select">
+            <column name="CODIGO_ESCENARIO" />
+        </many-to-one>
+        <many-to-one name="rubro" class="ec.com.sisapus.modelo.Rubro" fetch="select">
+            <column name="CODIGO_RUBRO" />
+        </many-to-one>
+        <property name="descApu" type="string">
+            <column name="DESC_APU" length="100" />
+        </property>
+        <property name="unidadApu" type="string">
+            <column name="UNIDAD_APU" length="50" />
+        </property>
+        <property name="categoriaApu" type="string">
+            <column name="CATEGORIA_APU" length="100" />
+        </property>
+        <property name="analApuMat" type="java.lang.Double">
+            <column name="ANAL_APU_MAT" precision="22" scale="0" />
+        </property>
+        <property name="analApuEqherr" type="java.lang.Double">
+            <column name="ANAL_APU_EQHERR" precision="22" scale="0" />
+        </property>
+        <property name="analApuMob" type="java.lang.Double">
+            <column name="ANAL_APU_MOB" precision="22" scale="0" />
+        </property>
+        <property name="analApuTran" type="java.lang.Double">
+            <column name="ANAL_APU_TRAN" precision="22" scale="0" />
+        </property>
+        <property name="costDirApu" type="java.lang.Double">
+            <column name="COST_DIR_APU" precision="22" scale="0" />
+        </property>
+        <property name="costIndApu" type="java.lang.Double">
+            <column name="COST_IND_APU" precision="22" scale="0" />
+        </property>
+        <property name="costOtrosIndApu" type="java.lang.Double">
+            <column name="COST_OTROS_IND_APU" precision="22" scale="0" />
+        </property>
+        <property name="costotApu" type="java.lang.Double">
+            <column name="COSTOT_APU" precision="22" scale="0" />
+        </property>
+        <property name="rendApu" type="java.lang.Double">
+            <column name="REND_APU" precision="22" scale="0" />
+        </property>
+        <property name="porcenIndApu" type="java.lang.Double">
+            <column name="PORCEN_IND_APU" precision="22" scale="0" />
+        </property>
+        <set name="detallePresupuestos" inverse="true">
+            <key>
+                <column name="CODIGO_APU" />
+            </key>
+            <one-to-many class="ec.com.sisapus.modelo.DetallePresupuesto" />
+        </set>
+        <set name="materialApus" inverse="true">
+            <key>
+                <column name="CODIGO_APU" />
+            </key>
+            <one-to-many class="ec.com.sisapus.modelo.MaterialApu" />
+        </set>
+        <set name="transporteApus" inverse="true">
+            <key>
+                <column name="CODIGO_APU" />
+            </key>
+            <one-to-many class="ec.com.sisapus.modelo.TransporteApu" />
+        </set>
+        <set name="equipherrApus" inverse="true">
+            <key>
+                <column name="CODIGO_APU" />
+            </key>
+            <one-to-many class="ec.com.sisapus.modelo.EquipherrApu" />
+        </set>
+        <set name="manoobraApus" inverse="true">
+            <key>
+                <column name="CODIGO_APU" />
+            </key>
+            <one-to-many class="ec.com.sisapus.modelo.ManoobraApu" />
+        </set>
+    </class>
+</hibernate-mapping>
