@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-Tesis_I
+Repositorio_SISAPU
 =======
 =======
-# Sisapu
-Tesis Sistema APU
->>>>>>> branch 'master' of https://github.com/danfer87/Sisapu.git
+# Repositorio_SISAPU
+Repositorio del sistema SISAPU
+>>>>>>> branch 'master' of https://github.com/danfer87/Repositorio_SISAPU.git
